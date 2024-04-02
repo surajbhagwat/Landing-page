@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Landing Page</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<style>
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6e9e9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.site-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.header-info h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.header-info p {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1 1 60%;
+    margin-right: 20px;
+}
+
+.features {
+    flex: 1 1 35%;
+}
+
+.feature {
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 20px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Aside Styles */
+.aside {
+    flex: 1 1 30%;
+}
+
+.signup-form {
+    background-color: #c5c0c0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header h2 {
+    margin-bottom: 10px;
+}
+
+.form-content input[type="text"],
+.form-content input[type="number"],
+.form-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #868383;
+    border-radius: 5px;
+}
+
+.form-content input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-content input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+.site-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+</style>
+</head>
+<body>
+<div class="site-content">
+    <div class="container">
+        <header class="site-header">
+            <a href="#" class="logo"><img src="logo.png" alt="College Logo"></a>
+            <div class="header-info">
+                <h1>Sinhgad Academy of Engineering</h1>
+                <p>Center of Excellence for Best institution in Pune | NAAC Accredited With Grade-"A"</p>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="content">
+                <h2>About SAE - Sinhgad Academy of Engineering</h2>
+                <p>Established in 2005, SAE - Sinhgad Academy of Engineering is a premier Institute located in Maharashtra. Institute offers Degree courses including 8 UG and 5 PG courses...</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <h2>Core Values</h2>
+                    <p>Defying myth that education is a privilege, SAE, Pune is always one step ahead with its initiatives of making education affordable for all.</p>
+                </div>
+                <!-- Add other features here -->
+            </div>
+            <aside class="aside">
+                <form action="#" class="signup-form">
+                    <div class="form-header">
+                        <h2>Apply Now</h2>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" name="Fmane" id="Fmane" placeholder="First name...">
+                        <input type="text" name="Mmane" id="Mmane" placeholder="Middle name...">
+                        <input type="text" name="Lmane" id="Lmane" placeholder="Last name...">
+                        <input type="text" name="email" id="email" placeholder="Email address...">
+                        <input type="text" name="mobile" id="mobile" placeholder="Mobile number...">
+                        <input type="text" name="address" id="address" placeholder="Address...">
+                        <input type="number" name="score" id="score" placeholder="CET Score...">
+                        <select name="Course" id="Course">
+                            <option value="#">Choose Course</option>
+                            <option value="#">Computer Science</option>
+                            <option value="#">Information Technology</option>
+                            <option value="#">Mechanical</option>
+                            <option value="#">Electronics</option>
+                            <option value="#">Civil</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                <div class="gallery">
+                    <img src="library.png" alt="Library">
+                    <!-- Add other gallery images here -->
+                </div>
+            </aside>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-info">
+                <h3>Contact us: 971111222333</h3>
+                <h3>Email Id: sinhgadacademyofengineering@gmail.com</h3>
+                <p>Sinhgad Academy of Engineering, Kondhwa-BK, Saswad Road, Pune-43</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="google-plus"><i class="fab fa-google-plus"></i></a>
+                <a href="#" class="pinterest"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
+``
